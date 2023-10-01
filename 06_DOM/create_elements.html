@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element using JS</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+   <script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "main"
+    div.id = "myID";
+    div.setAttribute("title","my title");
+    div.style.backgroundColor = "blue";
+    //div.innerText = "This is a text."
+
+    // create text node
+    const textNode = document.createTextNode("This is a text node.");
+    // add text node
+    div.appendChild(textNode);
+    // attach text node to document body
+    document.body.appendChild(div);
+   </script> 
+</body>
+</html>
